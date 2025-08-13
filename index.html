@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Gaiter – High School Math Tutoring</title>
+    <style>
+        /*
+         * Simple, responsive styles for a one‑page tutoring site.
+         * The design leans on clear typography and a classic green/blue palette,
+         * recalling the chalkboards of yesteryear while still feeling fresh.
+         */
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Hero banner uses the chalkboard image with a dark overlay */
+        .hero {
+            /* Apply a slightly lighter overlay so the chalkboard texture shows through */
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('chalkboard.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: 2.5rem;
+        }
+        .hero p {
+            margin: 0 0 20px;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cta-button:hover {
+            background-color: #1f6390;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #2c3e50;
+        }
+        /* List styling: remove default bullets and add custom checkmark */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+        }
+
+        /* Form styles */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .submit-btn:hover {
+            background-color: #1e8c4d;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.875rem;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>High School Math Tutoring</h1>
+        <p>Build Skills, Confidence &amp; Grades</p>
+        <a class="cta-button" href="#appointment">Book a Session</a>
+    </div>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I’m Andrea Gaiter, a Master’s student in Statistics with a Bachelor’s in Applied Mathematics. I specialize in making math concepts clear, practical, and easy to understand—whether you’re catching up, keeping up, or aiming ahead.</p>
+
+        <h2>Subjects Covered</h2>
+        <ul>
+            <li>Algebra I &amp; II</li>
+            <li>Geometry</li>
+            <li>Trigonometry</li>
+            <li>Precalculus</li>
+            <li>Calculus</li>
+            <li>Introductory Statistics</li>
+        </ul>
+
+        <h2>What You’ll Get</h2>
+        <ul>
+            <li>Step‑by‑step explanations tailored to your learning style</li>
+            <li>Practice problems and real‑world examples</li>
+            <li>Test prep strategies for quizzes, exams, and standardized tests</li>
+            <li>Flexible scheduling and patient, encouraging instruction</li>
+        </ul>
+
+        <h2>Format &amp; Rates</h2>
+        <p>Sessions are conducted online via Zoom or Google Meet. Hourly rates are affordable, and discounts are available for weekly packages.</p>
+
+        <h2>Payment Options</h2>
+        <p>I accept a variety of payment methods to make things easy: PayPal, CashApp, Apple Pay, good old fashioned cash, and even a check if you prefer. Specific payment details will be provided once your session is scheduled.</p>
+
+        <h2 id="appointment">Schedule an Appointment</h2>
+        <p>Ready to make math your strong point? Use the form below to request an appointment and I’ll get back to you promptly.</p>
+        <form action="mailto:andrea.gaiter@email.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject/Topic</label>
+                <input type="text" id="subject" name="Subject" placeholder="e.g., Algebra II, Test Prep">
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date &amp; Time</label>
+                <input type="text" id="date" name="Preferred Date/Time" placeholder="MM/DD/YYYY – HH:MM">
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Notes</label>
+                <textarea id="message" name="Message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Request</button>
+        </form>
+
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:andrea.gaiter@email.com">andrea.gaiter@email.com</a><br>
+           Call/Text: <a href="tel:+15555555555">(555) 555‑5555</a></p>
+    </div>
+    <div class="footer">
+        &copy; <script>document.write(new Date().getFullYear())</script> Andrea Gaiter Tutoring &bull; Akron, Ohio &bull; All rights reserved.
+    </div>
+</body>
+</html>
